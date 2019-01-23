@@ -76,8 +76,8 @@ defmodule ExAws.S3.Upload do
       end)
 
       {i, etag}
-    rescue
-      error -> {:error, error}
+    rescue 
+      error -> {:error, error} 
     end
   end
 end
